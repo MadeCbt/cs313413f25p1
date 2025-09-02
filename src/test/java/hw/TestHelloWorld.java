@@ -1,9 +1,10 @@
 package hw;
 
-import static org.junit.Assert.*;
-
 import java.util.Arrays;
+
 import org.junit.After;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -41,12 +42,12 @@ public class TestHelloWorld {
   @Test
   public void getMessageInList() { // this test is broken - fix it!
     var list = Arrays.asList(fixture);
-    assertEquals("hello world", list.get(1).getMessage());
+    assertEquals("hello world", list.get(0).getMessage());
   }
 
   @Test
   public void getYearInList() { // this test is broken - fix it!
     var list = Arrays.asList(fixture);
-    assertEquals(2025, list.get(1).getYear());
+    assertEquals(2025, list.get(0).getYear());
   }
 }
